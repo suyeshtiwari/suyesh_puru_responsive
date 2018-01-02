@@ -1,0 +1,285 @@
+<div ng-include="'templates/header.html'"></div>
+     
+<div class="lightGrayBackgroundColor padTop10 padBot10">
+	<div class="middleBodyContainer">
+		<h1 class="titleSignUp lato-bold noMarTop noMarBot">Verification in progress</h1>
+		<p class="noMarBot">While the folks at our office are activating your profile* (and not laughing at your govt id photograph, we swear!), you can continue to complete your profile.</p>
+	</div>
+</div>
+<div class="shadyBackground padTop60 padBot60">
+	<div class="middleBodyContainer hidden padBot40 ">
+		<div class="profileBox floatLeft">
+			<img class="fullWidth" src="images/profile-picture-blank.png" alt="profile picture blank" title="profile picture blank" />
+		</div>
+		<div class="profileBox floatRight">
+			<img class="fullWidth" src="images/profile-completion.JPG" alt="profile completion" title="profile completion" />
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="loginBox profilePage">
+		<div class="marTop20 marBot20">
+			<input type="text" class="loginInput twoColWidth inline marRight5 profileBackgroundColor" value="Sandip" placeholder="First Name" />
+			<input type="text" class="loginInput twoColWidth inline profileBackgroundColor" value="Paul" placeholder="Last Name" />
+		</div>
+
+		<input type="email" class="loginInput fullWidth profileBackgroundColor marBot20" value="sandip@nwook.com" placeholder="Email" />
+		<input type="text" class="loginInput fullWidth profileBackgroundColor marBot30" value="+919433849268" placeholder="Mobile Number" />
+
+		<p class="marBot10">Verification ID</p>
+		<div>
+			<p class="floatLeft padTop10"><img src="images/verified-doc.png" />&nbsp;&nbsp;Uploaded and verified.</p>
+			<a class="inline-block yellowLink fixButtonWidth hoverPointer floatRight" id="fileUploader">Change</a>
+			<div class="clear"></div>
+		</div>
+		<input ng-model='file' type="file" class="hidden" id="fileUploaderHidden" />
+		
+		<p class="marTop40">Link one or more social accounts</p>
+		<div class="socialIcons">
+			<i class="fa fa-facebook hoverPointer"></i>
+			<i class="fa fa-twitter hoverPointer inactive "></i>
+			<i class="fa fa-google hoverPointer inactive"></i>
+			<i class="fa fa-linkedin hoverPointer inactive"></i>
+		</div>
+		
+        <div class="marTop20">
+            <div class='input-group date dob halfWidth' id='datetimepicker'>
+                <input type='text' class="form-control upperCase" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+		
+		<p class="subText lightGray marTop10">The day you were born. We use this data for analysis and never share it with other users.</p>
+		
+		<select class="selectInput fullWidth block marTop10">
+			<option value="select">Select your Gender</option>
+			<option value="male">I am male</option>
+			<option value="female">I am female</option>
+			<option value="other">Other</option>
+		</select>
+		<select class="selectInput fullWidth block marTop20">
+			<option value="select">Location</option>
+			<option value="kolkata">Kolkata</option>
+			<option value="delhi">Delhi</option>
+			<option value="bangalore">Bangalore</option>
+		</select>
+		<p class="subText lightGray marTop10">Your primary location. You can change this later.</p>
+        
+        
+        <div class="profBlock marTop40">
+            <p class="marTop40">Your profession</p>
+            <select class="selectInput fullWidth block">
+                <option value="select">Select</option>
+                <option value="employee">I am an employee</option>
+                <option value="student">I am a student</option>
+                <option value="teacher">I am a teacher</option>
+                <option value="freelancer">I am a freelancer/consultant</option>
+                <option value="entrepreneur">I am an entrepreneur</option>
+            </select>
+            <div class="employeeSec">
+                <div class="radioButtonTwo marTop20">
+                    <button class="radioButtonGreen inline-block active">
+                        <input class="hidden" name="company" type="radio" value="Corporate" />Corporate
+                    </button>
+                    <button class="radioButtonGreen inline-block">
+                        <input class="hidden" name="company" type="radio" value="Startup" />Startup
+                    </button>
+                </div>
+                <input type="text" class="loginInput fullWidth profileBackgroundColor marTop20" placeholder="Name of the company" />
+            </div>
+            <div class="studentSec">
+                <div class="radioButtonThree marTop20">
+                    <button class="radioButtonGreen inline-block active">
+                        <input class="hidden" name="school" type="radio" value="School" />School
+                    </button>
+                    <button class="radioButtonGreen inline-block">
+                        <input class="hidden" name="school" type="radio" value="Undergrad" />Undergrad
+                    </button>
+                    <button class="radioButtonGreen inline-block">
+                        <input class="hidden" name="school" type="radio" value="Postgrad" />Postgrad
+                    </button>
+                </div>
+                <input type="text" class="loginInput fullWidth profileBackgroundColor marTop20" placeholder="Name of the school/collage" />
+            </div>
+            <div class="teacherSec">
+                <input type="text" class="loginInput fullWidth profileBackgroundColor marTop20" placeholder="Name of the subjects" />
+            </div>
+            <div class="freelancerSec">
+                <input type="text" class="loginInput fullWidth profileBackgroundColor marTop20" placeholder="Name of the skills" />
+            </div>
+            <div class="entrepreneurSec">
+                <input type="text" class="loginInput fullWidth profileBackgroundColor marTop20" placeholder="Name of the business" />
+            </div>
+        </div>
+        
+        <p class="marTop40">You’re also looking for</p>
+        <div>
+            <p class="lookingForThis hoverPointer inline-block colorWhite bold text-center subText">a co-founder</p>
+            <p class="lookingForThis hoverPointer inline-block colorWhite bold text-center subText selected">a job</p>
+            <p class="lookingForThis hoverPointer inline-block colorWhite bold text-center subText">meet people</p>
+            <p class="lookingForThis hoverPointer inline-block colorWhite bold text-center subText">employees</p>
+            <p class="lookingForThis hoverPointer inline-block colorWhite bold text-center subText">make new friends</p>
+        </div>
+        <input type="text" class="loginInput fullWidth profileBackgroundColor marTop20" placeholder="Anything else? Let us know." />
+        
+                
+		<a class="inline-block yellowLink fullWidth hoverPointer marTop60 marBot60" ng-click="completeRegt()">Complete registration and go to profile</a>
+	</div>
+</div>
+<div class="shadyBackground">
+    <div class="text-center padTop20">
+        <h1 class="bold noMarTop">Explore more places at Nwook</h1>
+    </div>
+    <div class="middleBodyContainer padTop20 marTop20">
+        <h2 class="bold">Summer Selects</h2>
+        <p class="marBot20">Get a respite from the rising tempature in the city.</p>
+    </div>
+    <div class="lightGreenBackgroundColor padTop40 padBot40">
+        <div class="middleBodyContainer relative">
+            <div class="spaceThumbnail hoverPointer floatLeft marRight30">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="spaceThumbnail hoverPointer floatLeft marRight30">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="spaceThumbnail hoverPointer floatLeft marRight30">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="spaceThumbnail hoverPointer floatLeft">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="clear"></div>
+            <a href="#/search-results"><img class="hoverPointer absolute seeAllLink" src="images/view_all.png" alt="view all" title="view all" /></a>
+        </div>
+    </div>
+    <div class="middleBodyContainer padTop20 marTop20">
+        <h2 class="bold">Premium Grabs</h2>
+        <p class="marBot20">The best of the best, at a no-strings-attached offering.</p>
+    </div>
+    <div class="lightGreenBackgroundColor padTop40 padBot40">
+        <div class="middleBodyContainer relative">
+            <div class="spaceThumbnail hoverPointer floatLeft marRight30">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="spaceThumbnail hoverPointer floatLeft marRight30">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="spaceThumbnail hoverPointer floatLeft marRight30">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="spaceThumbnail hoverPointer floatLeft">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="clear"></div>
+            <a href="#/search-results"><img class="hoverPointer absolute seeAllLink" src="images/view_all.png" alt="view all" title="view all" /></a>
+        </div>
+    </div>
+    <div class="">
+        <div class="floatRight text-center goTopBox hoverPointer">
+            <img src="images/back-to-top.JPG" alt="Back to the top" title="Back to the top">
+            <p class="samllText padTop10 lightGray">Back to the top</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div ng-include="'templates/footer.html'"></div>
+
+<script type="text/javascript" src="js/page-functionality.js"></script>	

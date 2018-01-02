@@ -1,0 +1,30 @@
+<div class="innerBodyContainer">
+    <a href="#/" class="relative floatRight">
+        <img class="exitButton hoverPointer" src="images/exit.png" alt="close" title="close" />
+    </a>
+    <div class="clear"></div>
+    <div class="loginBox">
+        <h1 class="titleSignUp lato-bold marTop60">One last step</h1>
+        <p>Please provide the following information to help us create your account.</p>
+
+        <div class="marTop20 marBot20">
+            <input type="text" class="loginInput halfWidth inline" placeholder="First Name" />
+            <input type="text" class="loginInput twoColWidth inline marLeft3" placeholder="Last Name" />
+        </div>
+
+        <input type="email" class="loginInput fullWidth" placeholder="&#x2709; Email" />
+        
+        <p class="marTop60 marBot20">Upload a government approved document to help us verify your identity.</p>
+        <a class="inline-block yellowLink fullWidth hoverPointer" id="fileUploader">Click to upload</a>
+        <input ng-model='file' type="file" class="hidden" id="fileUploaderHidden" />
+        <p class="subText marTop10 italic lightGray marBot20">Upload a government approved document to help us verify your identity.</p>
+        <div class="fileUploaderAdd hidden marTop10">
+            <p class="noMarBot inline textAddon subText"></p>
+            <a class="inline leftPad5 hoverPointer bodyColor">&times;</a>
+        </div>
+        
+        <a class="inline-block yellowLink fullWidth hoverPointer marTop60 marBot60" ng-click="completeRegt()">Complete registration and go to profile</a>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/page-functionality.js"></script>	

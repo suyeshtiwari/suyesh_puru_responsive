@@ -1,0 +1,118 @@
+<div id="header" class="whiteBackgroundColor">
+    <div class="innerBodyContainer relative">
+        <div class="logoblock floatLeft">
+            <a href="#/">
+                <img class="logo" src="images/logo.png" title="logo icon" alt="logo icon" />
+            </a>
+        </div>
+        <div class="searchBlock floatLeft">
+            <form class="navbar-form" role="search">
+                <div class="input-group add-on noOutline">
+                    <div class="input-group-btn noOutline">
+                        <button class="btn btn-default noOutline searchIcon" type="submit"></button>
+                    </div>
+                    <input class="form-control noOutline" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                 </div>
+            </form>
+        </div>
+        
+        <div class="accountblock floatRight whiteBackgroundColor text-center hoverPointer">
+            <div class="accountblock1 tableBlock">
+                <img class="fullWidth" src="images/blank_img.PNG" />
+            </div>
+            <div class="accountblock2 tableBlock leftPad10">
+                <p class="subText noMarBot lightGray">Your account <span class="triangle glyphicon glyphicon-triangle-bottom lightGray"></span></p>
+            </div>
+        </div>
+        <div class="locationBlock floatRight whiteBackgroundColor text-center hoverPointer relative">
+            <div class="locationInput">
+                <p class=""><span class="loc">Bangalore</span> <span class="triangle glyphicon glyphicon-triangle-bottom lightGray"></span></p>
+            </div>
+            <ul class="locationOption absolute">
+                <li>Location</li>
+                <li>Kolkata</li>
+                <li>Delhi</li>
+                <li>Bangalore</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        
+        <div class="dropDownAccount dropDownAccountLogin whiteBackgroundColor absolute">
+            <div class="dropDownAccountBlock1 floatLeft halfWidth">
+                <div class="loginBlock1 relative">
+                    <p class="samllText whiteBackgroundColor headerLabel absolute noMarBot">My Dashboard</p>
+                </div>
+                <div class="loginBlock2 relative padTop10">
+                    <a href="#/faq" class="menuLinks block rsIcon">Credits</a>
+                    <a href="#/faq" class="menuLinks block replayIcon">Booking History</a>
+                    <a href="#/invite" class="menuLinks block inviteIcon">Invite &amp; Earn</a>
+                    <p class="samllText whiteBackgroundColor headerLabel absolute noMarBot">Work together</p>
+                </div>
+                <div class="loginBlock3 relative">
+                    <a href="#/faq" class="menuLinks block partnerIcon">Become a partner</a>
+                    <a class="menuLinks block numberIcon">+91 988 888 8888</a>
+                    <p class="samllText whiteBackgroundColor headerLabel absolute noMarBot">Social</p>
+                </div>
+                <div class="loginBlock4">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <div class="dropDownAccountBlock2 floatRight halfWidth">
+                <div class="imageBlockLogin">
+                    <img src="images/blank_img.PNG" alt="profilr picture" title="profilr picture" />
+                </div>
+                <div class="nameBlockLogin">
+                    <p class="samllText bodyColor marBot5">Sandip Paul</p>
+                    <p class="fontText8 bodyColor marBot5">22, Male, Bangalore</p>
+                    <p class="fontText8 bodyColor marBot5">Snap Inc.</p>
+                </div>
+                <div class="bottonBlockLogin padTop15">
+                    <a href="#/profile" class="yellowDropMenu fontText12 colorWhite text-center block">Edit Profile</a>
+                    <a href="#/home" class="whiteDropMenu fontText12 bodyColor text-center block whiteBackgroundColor">Log out</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+(function($) {
+    $(document).ready(function() {
+        /* header location selecter */
+        $(".locationBlock").click(function() {
+            if($(this).hasClass("opened")) {
+                $(".locationOption").slideUp(500);
+                $(this).removeClass("opened");
+            } else {
+                $(".locationOption").slideDown(500);
+                $(this).addClass("opened");
+            }
+        });
+        $(".locationOption li").click(function(event) {
+            event.stopPropagation();
+            event.preventDefault();
+            $(".loc").text($(this).text());
+            $(".locationOption").slideUp(500);
+            $(".locationOption").removeClass("opened");
+        });
+        
+        
+        
+        /* header Menu selecter */
+        $(".accountblock").click(function() {
+            if($(this).hasClass("opened")) {
+                $(".dropDownAccount").slideUp(1000);
+                $(this).removeClass("opened");
+            } else {
+                $(".dropDownAccount").slideDown(1000);
+                $(this).addClass("opened");
+            }
+        });
+    });
+})(jQuery);
+</script>

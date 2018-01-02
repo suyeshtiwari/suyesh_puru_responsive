@@ -1,0 +1,427 @@
+<div ng-include="'templates/header.html'"></div>
+
+<div class="shadyBackground">
+    <div class="innerBodyContainer padTop20 padBot60">
+        <div class="spaceCol1 floatLeft whiteBackgroundColor padBot30">
+            <div id="spaceCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators hidden">
+                    <li data-target="spaceCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#spaceCarousel" data-slide-to="1"></li>
+                    <li data-target="#spaceCarousel" data-slide-to="2"></li>
+                    <li data-target="#spaceCarousel" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner homeSlider relative marBot10">
+                    <div class="item active">
+                        <img src="images/room-image.png" class="spaceImageHeight fullWidth"/>
+                    </div>
+                    <div class="item">
+                        <img src="images/room-image.png" class="spaceImageHeight fullWidth"/>
+                    </div>
+                    <div class="item">
+                        <img src="images/room-image.png" class="spaceImageHeight fullWidth"/>
+                    </div>
+                    <div class="item">
+                        <img src="images/room-image.png" class="spaceImageHeight fullWidth"/>
+                    </div>
+                </div>
+                
+                <!-- Left and right controls --> 
+                <a class="left carousel-control" data-target="#spaceCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" data-target="#spaceCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                
+                <img class="absolute flagThumb hoverPointer" src="images/flag_favourite_unselected.png" alt="Bookmark This" title="Bookmark This" />
+            </div>
+            <div class="spacedetails borderBottom">
+                <div class="floatLeft inline-block marBot15">
+                    <h3 class="bold marTop5 noMarBot colorBlack">Work@ Nwook Bhowanipore</h3>
+                    <p class="darkGray noMarBot">Calm and focused environment for getting work done</p>
+                </div>
+                <div class="floatRight inline-block marBot15">
+                    <h3 class="bold rightAlign marTop5 noMarBot colorBlack">&#8377; 50/hour</h3>
+                    <p class="rightAlign darkGray noMarBot">per seat</p>
+                </div> 
+                <div class="clear"></div>
+                <a href="#/booking-engine" class="inline-block greenLink fontText12 fullWidth hoverPointer marBot30">RESERVE SEATS</a>
+                <p class="noMarBot padBot5 bold lightGray2">Where</p>
+                <ul class="marBot30 lineBarList">
+                    <li><p class="colorBlack noMarBot">15 Rashbehari Avenue, Kolkata-700048</p></li>
+                    <li><p class="colorBlack noMarBot">10 mins from Nicco park</p></li>
+                    <li><a class="colorBlack noMarBot underline" href="#">View Map</a></li>
+                </ul>
+                <p class="marBot40 colorBlack">Blu, the coffee shop at Aauris Hotel now offers coworking seats at an affordable hourly rate, while charging by the minute. Ideal for meetings, discussions or solo work in a peaceful and classy environment.</p>
+            </div>
+            <div class="spacedetails padTop30">
+                <p class="lightGray2 noMarBot padBot5 bold">What’s in there</p>
+                <ul class="padTop15 padBot20 facilityList">
+                    <li class="inline-block halfWidth AC floatLeft"><p>AC</p></li>
+                    <li class="inline-block halfWidth Banquet Hall floatLeft"><p>Banquet Hall</p></li>
+                    <li class="inline-block halfWidth Dinning Area floatLeft"><p>Dinning Area</p></li>
+                    <li class="inline-block halfWidth Geyser floatLeft"><p>Geyser</p></li>
+                    <li class="inline-block halfWidth Free Wifi floatLeft"><p>Free Wifi</p></li>
+                    <li class="inline-block halfWidth Lift Elevetor floatLeft"><p>Lift/Elevetor</p></li>
+                </ul>
+                <p class="clear lightGray2 noMarBot padBot5 bold padTop20">Why you’ll love this place</p>
+                <ul class="padTop15 padBot20">
+                    <li><p class="colorBlack"><span class="colorGreen bold">&#10004;</span>&nbsp;Complete access to the swimming pool for an hour</p></li>
+                    <li><p class="colorBlack"><span class="colorGreen bold">&#10004;</span>&nbsp;Time post 1 hour billed by the minute</p></li>
+                    <li><p class="colorBlack"><span class="colorGreen bold">&#10004;</span>&nbsp;One complimentary non-alcoholic drink or beer every hour</p></li>
+                    <li><p class="colorBlack"><span class="colorGreen bold">&#10004;</span>&nbsp;Network with like minded individuals</p></li>
+                    <li><p class="colorBlack"><span class="colorGreen bold">&#10004;</span>&nbsp;20% off on the entire F &amp; B Menu</p></li>
+                </ul>
+                <p class="lightGray2 noMarBot padBot5 bold">Points to note</p>
+                <ul class="padTop15 imageList">
+                    <li class="unverified"><p class="colorBlack">Smoking and pets not allowed in the premises</p></li>
+                    <li class="note"><p class="colorBlack">Entry only allowed for individuals with personal booking</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="spaceCol2 floatRight">
+            <div class="spaceImageHeight fullWidth marBot10 whiteBackgroundColor">
+                <ul class="nav nav-tabs">
+                    <li class="active hoverPointer halfWidth text-center" data-toggle="tab" data-target="#packages"><p class="lightGray2 noMarBot">Hourly Packages</p></li>
+                    <li class="hoverPointer halfWidth text-center" data-toggle="tab" data-target="#dedicated"><p class="lightGray2 noMarBot">Dedicated</p></li>
+                </ul>
+                <div class="tab-content"> 
+                    <div id="packages" class="tab-pane fade in active relative text-center">
+                        <p class="centerPositionDiv width70 darkGray hidden">Hourly packages are not available for this space.<br />Please click on the “Dedicated” tab.</p>
+                        <div class="packageDedicatiedHeight padTop10">
+                            <div class="packageContainer centerPosition">
+                                <div>
+                                    <div class="tableBlank floatLeft"></div>
+                                    <div class="tableTopHead floatLeft">
+                                        <p class="colorWhite fontText12 noMarBot">15 days</p>
+                                    </div>
+                                    <div class="tableTopHead floatLeft">
+                                        <p class="colorWhite fontText12 noMarBot">30 days</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div>
+                                    <div class="tableSideHead floatLeft relative">
+                                        <p class="colorWhite fontText12 noMarBot relative">50 hours</p>
+                                    </div>
+                                    <div class="tableBody floatLeft relative hoverPointer">
+                                        <p class="darkGray noMarBot bold">Starter pack</p>
+                                        <div class="greenRadio inline-block relative">
+                                            <input class="noMarBot absolute hoverPointer" name="package" type="radio" value="Starter pack" />
+                                        </div>
+                                        <p class="darkGray inline-block noMarBot bold">&#8377; 2250*</p>
+                                        <p class="spcMsg noMarBot absolute stickBottom bold">Save &#8377; 250 in comparison to &#8377; 50/hour pricing!</p>
+                                    </div>
+                                    <div class="tableBody floatLeft relative hoverPointer">
+                                        <p class="darkGray noMarBot bold">Flex Value Pack</p>
+                                        <div class="greenRadio inline-block relative">
+                                            <input class="noMarBot absolute hoverPointer" name="package" type="radio" value="Flex Value Pack" />
+                                        </div>
+                                        <p class="darkGray inline-block noMarBot bold">&#8377; 2350*</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div>
+                                    <div class="tableSideHead floatLeft relative">
+                                        <p class="colorWhite fontText12 noMarBot relative">100 hours</p>
+                                    </div>
+                                    <div class="tableBody floatLeft relative hoverPointer">
+                                        <p class="darkGray noMarBot bold">Pro-worker pack</p>
+                                        <div class="greenRadio inline-block relative">
+                                            <input class="noMarBot absolute hoverPointer" name="package" type="radio" value="Pro-worker pack" />
+                                        </div>
+                                        <p class="darkGray inline-block noMarBot bold">&#8377; 4300*</p>
+                                    </div>
+                                    <div class="tableBody floatLeft relative hoverPointer">
+                                        <p class="darkGray noMarBot bold">Super Value pack</p>
+                                        <div class="greenRadio inline-block relative">
+                                            <input class="noMarBot absolute hoverPointer" name="package" type="radio" value="Super Value pack" />
+                                        </div>
+                                        <p class="darkGray inline-block noMarBot bold">&#8377; 4400*</p>
+                                        <p class="colorRed spcMsg bold">Most popular!</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="marTop15">
+                                    <p class="darkGray fontText12 floatLeft noMarBot padTop10 marRight30">Select a start date</p>
+                                    <div class="input-group date halfWidth text-center floatLeft" id="datetimepicker">
+                                        <input type='text' class="form-control upperCase" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linkBox relative">
+                            <div class="linkText floatLeft inline-block width80">
+                                <p class="noMarBot bold relative leftPad10"></p>
+                            </div>
+                            <div class="linkButton floatRight inline-block text-center yellowBackgroundColor width20 hoverPointer">
+                                <a href="#/checkout" class="colorWhite fontText12 noMarBot bold">NEXT &rarr;</a>
+                            </div> 
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div id="dedicated" class="tab-pane fade relative relative">
+                        <div class="packageDedicatiedHeight padTop40 leftPad10">
+                            <div class="switchBlock marBot40">
+                                <div class="tableBlock">
+                                    <p class="fontText12 lightGray noMarBot bold switchFalse colorGreen">Private</p>
+                                </div>
+                                <div class="tableBlock text-center">
+                                    <label class="switch noMarBot">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="tableBlock">
+                                    <p class="fontText12 lightGray noMarBot bold switchTrue">Shared</p>
+                                </div>
+                            </div>
+                            <div class="marBot30 dedicatedPrivate">
+                                <select class="greenSelect hoverPointer halfWidth">
+                                    <option value="select">Select a sitting type</option>
+                                    <option value="Type A">Type A</option>
+                                    <option value="Type B">Type B</option>
+                                    <option value="Type C">Type C</option>
+                                </select>
+                            </div>
+                            <div class="marBot20">
+                                <select class="greenSelect hoverPointer halfWidth">
+                                    <option value="select">Select a plan</option>
+                                    <option value="Plan A">Plan A</option>
+                                    <option value="Plan B">Plan B</option>
+                                    <option value="Plan C">Plan C</option>
+                                    <option value="Plan D">Plan D</option>
+                                    <option value="Plan E">Plan E</option>
+                                </select>
+                            </div>
+                            <div class="halfWidth dedicatedShared">
+                                <div class="floatLeft">
+                                    <p class="fontText12 noMarBot numButtonText darkGray">Seating units needed</p>
+                                </div>
+                                <div class="numButton floatRight">
+                                    <div class="minnusButton tableBlock hoverPointer text-center">
+                                        <P class="noMarBot bold colorRed">-</P>
+                                    </div>
+                                    <div class="buttonContent tableBlock text-center darkGray">
+                                         <input type="text" class="noMarBot fontText12 bold" value="1" readonly >
+                                    </div>
+                                    <div class="plusButton tableBlock hoverPointer text-center">
+                                        <P class="noMarBot bold colorGreen">+</P>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+
+                        <div class="linkBox relative">
+                            <div class="linkText floatLeft inline-block width80">
+                                <p class="noMarBot bold relative leftPad10">Total: &#8377; 6000 + taxes
+                                    <span class="infoSup absolute text-center colorWhite">i</span>
+                                </p>
+                            </div>
+                            <div class="linkButton floatRight inline-block text-center yellowBackgroundColor width20 hoverPointer">
+                                <a href="#/checkout" class="colorWhite fontText12 noMarBot bold">NEXT &rarr;</a>
+                            </div> 
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="spacedetails2 padTop10 whiteBackgroundColor">
+                <div class="floatLeft inline-block">
+                    <p class="fontText12 lightGray">Hours Open</p>
+                </div>
+                <div class="floatRight inline-block width60 timingBlock">
+                    <p class="rightAlign fontText12 noMarBot darkGray">Weekdays: 11 AM to 7 PM&nbsp;&nbsp;&nbsp;Saturday:10 AM to 5 PM</p>
+                    <p class="rightAlign fontText12 noMarBot darkGray">Sunday: 11 AM to 8 PM</p>
+                </div> 
+                <div class="clear"></div>
+            </div>
+            <div class="marTop10">
+                <div class="floatLeft inline-block updatesText whiteBackgroundColor width70">
+                    <p class="colorRed fontText12 noMarBot">Buy one and get one on all beverages till 1st August, 2017!</p>
+                </div>
+                <div class="floatRight inline-block updatesButton text-center width30 hoverPointer">
+                    <p class="colorWhite fontText12 noMarBot">Unfollow updates</p>
+                </div> 
+                <div class="clear"></div>
+            </div>
+            <div class="nwookPromise marTop40">
+                <div class="nwookPromise1 floatLeft">
+                    <img src="images/nwook-promise.JPG" />
+                </div>
+                <div class="nwookPromise2 floatLeft">
+                    <p class="lightGray noMarBot">Nwook Promise</p>
+                    <ul class="lineBarList">
+                        <li class="lightGray"><p class="lightGray noMarBot fontText12">Fairness Guaranteed</p></li>
+                        <li class="lightGray"><p class="lightGray noMarBot fontText12">Value for money</p></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div> 
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="text-center">
+        <h1 class="bold">Explore more places at Nwook</h1>
+    </div>
+    <div class="middleBodyContainer padTop20 marTop20">
+        <h2 class="bold fontText24">Summer Selects</h2>
+        <p class="marBot20">Get a respite from the rising tempature in the city.</p>
+    </div>
+    <div class="lightGreenBackgroundColor padTop40 padBot40">
+        <div class="middleBodyContainer relative">
+            <div class="spaceThumbnail hoverPointer floatLeft marRight30">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="spaceThumbnail hoverPointer floatLeft marRight30">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="spaceThumbnail hoverPointer floatLeft marRight30">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="spaceThumbnail hoverPointer floatLeft">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="clear"></div>
+            <a href="#/search-results"><img class="hoverPointer absolute seeAllLink" src="images/view_all.png" alt="view all" title="view all" /></a>
+        </div>
+    </div>
+    <div class="middleBodyContainer padTop20 marTop20">
+        <h2 class="bold fontText24">Premium Grabs</h2>
+        <p class="marBot20">The best of the best, at a no-strings-attached offering.</p>
+    </div>
+    <div class="lightGreenBackgroundColor padTop40 padBot40">
+        <div class="middleBodyContainer relative">
+            <div class="spaceThumbnail hoverPointer floatLeft marRight30">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="spaceThumbnail hoverPointer floatLeft marRight30">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="spaceThumbnail hoverPointer floatLeft marRight30">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="spaceThumbnail hoverPointer floatLeft">
+                <div class="imgBlockThumb relative">
+                    <img src="images/demo-room.jpg" alt="Sector 5 Work" title="Sector 5 Work" />
+                    <div class="absolute offer-category text-center">
+                        <p class="colorWhite samllText">offer/category</p>
+                    </div>
+                </div>
+                <div class="textBlockThumb whiteBackgroundColor relative">
+                    <h4 class="noMarBot bold bodyColor">Sector 5 Work</h4>
+                    <p class="bodyColor fontText12">&#8377; 125 /hour per seat</p>
+                    <p class="noMarBot samllText lightGray">10 mins from nicco park</p>
+
+                    <img class="absolute flagThumb" src="images/flag_favourite_unselected.png" alt="Add to favourite" title="Add to favourite" />
+                </div>
+            </div>
+            <div class="clear"></div>
+            <a href="#/search-results"><img class="hoverPointer absolute seeAllLink" src="images/view_all.png" alt="view all" title="view all" /></a>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="floatRight text-center goTopBox hoverPointer">
+            <img src="images/back-to-top.JPG" alt="Back to the top" title="Back to the top">
+            <p class="samllText padTop10 lightGray">Back to the top</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div ng-include="'templates/footer.html'"></div>

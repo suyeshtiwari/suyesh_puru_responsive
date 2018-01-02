@@ -1,0 +1,98 @@
+<div id="header" class="whiteBackgroundColor">
+    <div class="innerBodyContainer relative">
+        <div class="logoblock floatLeft">
+            <a href="#/">
+                <img class="logo" src="images/logo.png" title="logo icon" alt="logo icon" />
+            </a>
+        </div>
+        <div class="searchBlock floatLeft">
+            <form class="navbar-form" role="search">
+                <div class="input-group add-on noOutline">
+                    <div class="input-group-btn noOutline">
+                        <button class="btn btn-default noOutline searchIcon" type="submit"></button>
+                    </div>
+                    <input class="form-control noOutline" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                 </div>
+            </form>
+        </div>
+        
+        <div class="accountblock floatRight whiteBackgroundColor text-center hoverPointer">
+            <div class="accountblock1 tableBlock">
+                <img class="fullWidth" src="images/blank_img.PNG" />
+            </div>
+            <div class="accountblock3 tableBlock leftPad10">
+                <p class="subText noMarBot lightGray">Sign In&nbsp;&nbsp;&nbsp;&nbsp;<span class="triangle glyphicon glyphicon-triangle-bottom lightGray"></span></p>
+            </div>
+            <div class="dropDownAccount absolute logoutDropDown whiteBackgroundColor">
+                <div class="logoutBlock1 relative padTop20">
+                    <a href="#/login" class="yellowDropMenu fontText12 colorWhite text-center block">Sign in</a>
+                    <a href="#/welcome" class="whiteDropMenu fontText12 bodyColor text-center block whiteBackgroundColor">Register</a>
+                    <p class="samllText whiteBackgroundColor headerLabel absolute noMarBot">Quick Links</p>
+                </div>
+                <div class="logoutBlock2 relative">
+                    <a href="#/faq" class="menuLinks block faqIcon">FAQS</a>
+                    <a href="#/faq" class="menuLinks block aboutIcon">About us</a>
+                    <a href="#/invite" class="menuLinks block inviteIcon">Invite &amp; Earn</a>
+                    <a href="#/faq" class="menuLinks block partnerIcon">Become a partner</a>
+                    <a class="menuLinks block numberIcon">+91 988 888 8888</a>
+                    <p class="samllText whiteBackgroundColor headerLabel absolute noMarBot">Social</p>
+                </div>
+                <div class="logoutBlock3">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="locationBlock floatRight whiteBackgroundColor text-center hoverPointer relative">
+            <div class="locationInput">
+                <p class=""><span class="loc">Bangalore</span> <span class="triangle glyphicon glyphicon-triangle-bottom lightGray"></span></p>
+            </div>
+            <ul class="locationOption absolute">
+                <li>Location</li>
+                <li>Kolkata</li>
+                <li>Delhi</li>
+                <li>Bangalore</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+<script>
+(function($) {
+    $(document).ready(function() {
+        /* header location selecter */
+        $(".locationBlock").click(function() {
+            if($(this).hasClass("opened")) {
+                $(".locationOption").slideUp(500);
+                $(this).removeClass("opened");
+            } else {
+                $(".locationOption").slideDown(500);
+                $(this).addClass("opened");
+            }
+        });
+        $(".locationOption li").click(function(event) {
+            event.stopPropagation();
+            event.preventDefault();
+            $(".loc").text($(this).text());
+            $(".locationOption").slideUp(500);
+            $(".locationOption").removeClass("opened");
+        }); 
+        
+        
+        /* header Menu selecter */
+        $(".accountblock").click(function() {
+            if($(this).hasClass("opened")) {
+                $(".dropDownAccount").slideUp(1000);
+                $(this).removeClass("opened");
+            } else {
+                $(".dropDownAccount").slideDown(1000);
+                $(this).addClass("opened");
+            }
+        });
+    });
+})(jQuery);
+</script>
