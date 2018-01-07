@@ -1,0 +1,54 @@
+
+.menuImage{
+    display: none;
+}
+@media (min-width : 320px) and (max-width: 768px) {
+    .tabHeader .nav-tabs.homeList>li{
+        padding: 12px 25px 0px 0px;
+    }
+    .tabHeader .nav-tabs>li>a, .tabHeader .nav-tabs>li>a:focus, .tabHeader .nav-tabs>li>a:hover{
+        font-size: 12px;
+    }
+    .spaceThumbnail{
+        width: 48%;
+        margin-right: 10px;
+        
+    }
+    .textBlockThumb h4, .textBlockThumb p{
+        font-size: 8px;
+    }
+    .textBlockThumb{
+        height: 70px;
+        padding: 5px 5px 15px 15px;
+    }
+    .middleBodyContainer div:nth-of-type(2){
+        margin-right: 0px;
+    }
+    .tabHeader{
+        overflow-x: scroll;
+    }
+    .lightGreenBackgroundColor, .shadyBackground{
+        background: #ffffff;
+    }
+    .bottomAdd div{
+        width: 100%;
+    }
+    .bottomAdd .textBox{
+        margin-top: 20px;
+    }
+    .menuImage{
+        width: 40px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .menuImage{
+        display: block;
+    }
+    .menuImage img{
+        width: 100%;
+    }
+    .accountblock, .locationBlock{
+        display: none
+    }
+}
