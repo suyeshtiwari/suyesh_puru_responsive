@@ -51,4 +51,16 @@
     .accountblock, .locationBlock{
         display: none
     }
+    .searchBlock1, .searchBlock2, .searchBlock3{
+        float: none;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .shadyBackground_searchPage{
+        background-color: rgba(216,216,216,0.25);
+    }
+    .loadingstatus{
+        width: auto;
+    }
 }
